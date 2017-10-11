@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+    <title>Google Analytics</title>
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106748712-1"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-106748712-1');
+      </script>
+
+
+
+  </head>
+  <body>
+
+
+    <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'xhr label', transport_type: 'xhr'});">Click Log xhr</button>
+    <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'beacon label', transport_type: 'beacon'});">Click Log beacon</button>
+    <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'image label', transport_type: 'image'});">Click Log image</button>
+
+	<a href="https://analytics.google.com/analytics/web">Google Analytics<a>
+	
+  </body>
+</html>
