@@ -22,6 +22,7 @@
   <body>
 
 
+    <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'default label'});">Click Log default</button>
     <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'xhr label', transport_type: 'xhr'});">Click Log xhr</button>
     <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'beacon label', transport_type: 'beacon'});">Click Log beacon</button>
     <button onclick="gtag('event', 'click', {event_action: 'action',event_label: 'image label', transport_type: 'image'});">Click Log image</button>
